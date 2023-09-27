@@ -4,7 +4,7 @@ import {
     testRecoilUpdateAgeSelector,
     testRecoilUpdateNameSelector,
     useSaveManager,
-} from '../../store/testRecoilSaveStore';
+} from '../../store/recoil/userStore';
 
 const TestRecoilSave = () => {
     const testRecoilSaveState = useRecoilValue(testRecoilSaveStore);
