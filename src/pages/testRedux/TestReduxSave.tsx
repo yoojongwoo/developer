@@ -1,10 +1,12 @@
 import { RootState } from '../../store/redux/store';
-import { userActions } from '../../store/redux/userStore';
+import { userActions } from '../../store/redux/userReduxStore';
 import { useDispatch, useSelector } from 'react-redux';
 
 const TestReduxSave = () => {
     const userState = useSelector((state: RootState) => state.user);
     const dispatch = useDispatch();
+
+    console.log('userState', userState);
     return (
         <div>
             TestReduxSave

@@ -4,7 +4,7 @@ import {
     testRecoilUpdateAgeSelector,
     testRecoilUpdateNameSelector,
     useSaveManager,
-} from '../../store/recoil/userStore';
+} from '../../store/recoil/userRecoilStore';
 
 const TestRecoilSave = () => {
     const testRecoilSaveState = useRecoilValue(testRecoilSaveStore);
@@ -23,6 +23,8 @@ const TestRecoilSave = () => {
     };
 
     const { updateName, updateAge } = useSaveManager();
+
+    console.log('testRecoilSaveState : ', testRecoilSaveState);
 
     return (
         <div>

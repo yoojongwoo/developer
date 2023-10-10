@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { userReducer } from './userStore';
+import { userReducer } from './userReduxStore';
 
 const store = configureStore({
     reducer: {
